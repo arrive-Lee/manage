@@ -1,0 +1,51 @@
+/* 去除内外边距，设置ie盒模型 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    touch-action: none;
+}
+
+/* 去掉列表远点 */
+ul,
+dl,
+ol {
+    list-style: none;
+}
+
+/* 去除文字下划线 */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 让所有斜体不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 去除 */
+input,
+textarea {
+    outline: none;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*图片没有边框 去掉图片底侧的空白缝隙*/
+img {
+    vertical-align: bottom;
+    border: 0;
+}
